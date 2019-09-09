@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Logo on display</string>
+
+    <string-array name="Gravity">
+        <item>Center</item>
+        <item>Left top</item>
+        <item>Left center</item>
+        <item>Left bottom</item>
+        <item>Bottom center</item>
+        <item>Top center</item>
+        <item>Right top</item>
+        <item>Right center</item>
+        <item>Right bottom</item>
+    </string-array>
+
+    <string name="BtnShowIndicator">Enable indicator</string>
+    <string name="BtnHideIndicator">Disable indicator</string>
+    <string name="LabelGravity">Select alignment</string>
+    <string name="LabelSize">Select size</string>
+    <string name="LabelChoosePng">Choose PNG</string>
+    <string name="LabelTransparensy">Adjust transparency</string>
+    <string name="LabelOverlaySB">Overlay statusbar</string>
+    <string name="PermissionsNeeded">Not all requested permissions was granted. You can grant permissions in phone settings for application Display brightness. Application now exit.</string>
+    <string name="Rotation">Rotation</string>
+    <string name="VShift">Vertical shift</string>
+    <string name="HShift">Horizontal shift</string>
+    <string name="Defaults">Reset to default</string>
+    <string name="Donation">Donation</string>
+    <string name="title_activity_donation">DonationActivity</string>
+</resources>

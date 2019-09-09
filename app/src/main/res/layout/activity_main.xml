@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayoutMain"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayoutButtonsInternal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LabelSize"/>
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2sp"
+                    android:id="@+id/SeekBarSize"
+                    android:max="60"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LabelTransparensy"
+                    android:layout_gravity="center_vertical"/>
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_weight="1"
+                    android:id="@+id/SeekBarTransparent"
+                    android:max="255"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LabelChoosePng"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ImageViewPNG"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rotation"/>
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2sp"
+                    android:id="@+id/seekBarRotation"
+                    android:max="360"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RelativeLayout06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:text="@string/LabelGravity"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/SpinnerGravity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Gravity"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HShift"/>
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2sp"
+                    android:id="@+id/seekBarHorShift"
+                    android:progress="100"
+                    android:max="200"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VShift"/>
+
+                <SeekBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2sp"
+                    android:id="@+id/seekBarVertShift"
+                    android:progress="100"
+                    android:max="200"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:text="@string/LabelOverlaySB"
+                android:id="@+id/CheckBoxFullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnReset"
+                android:text="@string/Defaults"/>
+
+            <WebView
+                android:layout_marginTop="30dp"
+                android:id="@+id/webView1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButtonsInternal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonStart"
+            android:text="@string/BtnShowIndicator"
+            android:layout_weight="1">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonStop"
+            android:text="@string/BtnHideIndicator"
+            android:layout_weight="1">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
